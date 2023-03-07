@@ -10,13 +10,33 @@
 <body>
     <main>
         <section id="login">
-            <div>
-                <img src="imagens/pexels-nick-collins-1292998.jpg" alt="">
+            <div id="imagem">
+                <!-- Imagem nas CSS -->
             </div>
-            <div>
+            <div id="formulario">
+
                 <h1>Login</h1>
-                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="" method="post"></form>
+
+                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                
+                <form action="" method="post">
+                        <div id="divusu">
+                            <label for="iusu">IMG</label>
+                            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Usuário">
+                        </div>
+
+                        <div id="divsen">
+                            <label for="isen">IMG</label>
+                            <input type="password" name="sen" id="isen" minlength="8" maxlength="16" required placeholder="Senha">
+                        </div>
+                        <div id="divent">
+                            <input type="submit" value="Entrar" id="ient">
+                        </div>
+                        <div id="divesq">
+                            <input type="button" value="Esqueci a Senha" id="iesq">
+                        </div>
+                </form>
+
             </div>
         </section>
     </main>
