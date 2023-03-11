@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 
+Typical device breaking points:
+-------------------------------
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+--------------------------------
+ */
+
+@media screen and (min-width:812px){
+    section#login{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        
+        width: auto;
+        height: auto;
+    }
+
+    section#login > div#imagem{
+
+        background: var(--cor-primaria) url(../imagens/pexels-nick-collins-1292998.jpg) no-repeat;
+        min-width: 200px;
+        height: auto;
+        background-size: cover;
+        display: block;
+    }
+    div#formulario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+}

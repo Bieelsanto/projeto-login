@@ -64,6 +64,13 @@ section#login > div#formulario{
     display: block;
 }
 
+div#formulario{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+}
+
 div#formulario > h1{
     text-align: center;
     margin-bottom: 10px;
@@ -80,6 +87,10 @@ div#divusu, div#divsen{
     padding: 2px;
     margin: 4px;
     border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
 }
 
 div#divusu > label, div#divsen > label{
@@ -90,9 +101,9 @@ div#divusu > label, div#divsen > label{
 input#iusu, input#isen{
     border: none;
     border-radius: 4px;
-    height: 40px;
+    height: 35px;
     text-indent: 4px;
-    width: 174px;
+    flex-grow: 1000;
 }
 
 input#ient{
@@ -101,9 +112,10 @@ input#ient{
     color: white;
     padding: 10px;
     border-radius: 4px;
-    margin: 4px;
+    margin: 2px;
     width: 223px;
     font-size: 1em;
+    flex-grow: 1000;
 }
 
 input#ient:hover{
@@ -113,19 +125,19 @@ input#ient:hover{
 
 input#iesq{
     border: 1px solid var(--cor-secundaria);
-    color: rgb(73, 73, 73);
+    color: #36706e;
     padding: 10px;
     border-radius: 4px;
-    margin: 4px;
+    margin: 2px;
     width: 223px;
     font-size: 1em;
+    flex-grow: 1000;
 }
-
-
 
 input#iesq:hover{
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color: none;
+    border: 3px solid red;
+    box-sizing: border-box;
 }
 
